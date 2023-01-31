@@ -1,3 +1,5 @@
+all: install build publish package-install lint
+
 install: 
 	poetry install
 
@@ -15,3 +17,6 @@ brain-games:
 
 lint:
 	poetry run flake8 brain_games
+
+remove:
+	python3 -m pip uninstall hexlet-code

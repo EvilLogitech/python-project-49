@@ -4,4 +4,4 @@
 # game even
 https://asciinema.org/a/EKt4WdgohjKaaGXBpR0yj9tfR
 # game calc
-https://asciinema.org/a/s4nzjyLxw6DcXiq61eOsINBix
+https://asciinema.org/a/OIOTRSGcrBto0ymalaluW0jS3

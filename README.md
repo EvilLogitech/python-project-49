@@ -5,3 +5,5 @@
 https://asciinema.org/a/EKt4WdgohjKaaGXBpR0yj9tfR
 # game calc
 https://asciinema.org/a/OIOTRSGcrBto0ymalaluW0jS3
+# game gcd
+https://asciinema.org/a/6yxQ0cFjnM6mGoc9YAyn3G5OR

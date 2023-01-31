@@ -1,23 +1,10 @@
 #!/usr/bin/env python3
-import random
+from brain_games.scripts.game_carcass import start_game
+import brain_games.games.even as even
 
 
-def get_number():
-    return random.randint(0, 100)
-
-
-def is_even(num):
-    return True if num % 2 == 0 else False
-
-
-def make_game_step():
-    num = get_number()
-    correct_answer = 'yes' if is_even(num) else 'no'
-    return (str(num), correct_answer)
-
-
-def get_rules():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
+def play_game():
+    start_game(even.get_rules, even.make_game_step)
 
 
 def main():

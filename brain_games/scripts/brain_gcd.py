@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.scripts.game_carcass import start_game
-import brain_games.games.gcd as gcd
+import brain_games.games.gcd as game
 
 
 def play_game():
-    start_game(gcd.get_rules, gcd.make_game_step)
+    start_game(game.get_rules, game.make_game_step)
 
 
 def main():

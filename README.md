@@ -9,3 +9,5 @@ https://asciinema.org/a/OIOTRSGcrBto0ymalaluW0jS3
 https://asciinema.org/a/6yxQ0cFjnM6mGoc9YAyn3G5OR
 # game progression
 https://asciinema.org/a/zThE0Ldt5sw0s3HWzM6RIY08M
+# game prime
+https://asciinema.org/a/s8YyUmht9oLotHzFDdFb73Y3c

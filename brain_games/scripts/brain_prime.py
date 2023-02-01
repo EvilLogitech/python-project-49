@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from brain_games.scripts.game_carcass import start_game
-import brain_games.games.progression as game
+import brain_games.games.prime as game
 
 
 def play_game():

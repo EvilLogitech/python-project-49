@@ -6,25 +6,18 @@ def get_number():
     return random.randint(0, 100)
 
 
-def get_gcd(num):
-    gcd = []
-    for i in range(1, num // 2):
-        if num % i == 0:
-            gcd.append(i)
-    gcd.append(num)
-    return gcd
+def euclid_gcd(num1, num2):
+    while num1 != 0 and num2 != 0:
+        if num1 > num2:
+            num1 = num1 % num2
+        else:
+            num2 = num2 % num1
+    return num1 + num2
 
 
 def make_game_step():
     num1, num2 = get_number(), get_number()
-    gcd1, gcd2 = get_gcd(num1), get_gcd(num2)
-    gcd1.reverse()
-    gcd2.reverse()
-    gcd_both = []
-    for i in gcd1:
-        if i in gcd2:
-            gcd_both.append(i)
-    correct_answer = str(gcd_both[0])
+    correct_answer = str(euclid_gcd(num1, num2))
     return (f'{str(num1)} {str(num2)}', correct_answer)
 
 

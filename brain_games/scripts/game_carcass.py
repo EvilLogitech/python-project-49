@@ -11,7 +11,7 @@ def stop_game(result, name, user_answer='', correct_answer=''):
 
 
 def start_game(get_rules, make_a_step):
-    name = prompt.string('May i have your name? ')
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}\n{get_rules()}')
     count = 0
     game_res = False

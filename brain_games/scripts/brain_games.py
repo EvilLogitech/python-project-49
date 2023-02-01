@@ -7,7 +7,6 @@ def greetings():
 
 
 def main():
-    greetings()
     welcome_user()
 
 

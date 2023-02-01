@@ -16,7 +16,8 @@ def make_game_step():
     mask = random.randint(0, 9)
     correct_answer = progression[mask]
     progression[mask] = '..'
-    return (f"""{str(progression).replace(",", "").replace("'", "").strip("[]")}""", str(correct_answer))
+    pr_str = str(progression).replace(",", "").replace("'", "").strip("[]")
+    return (f"""{pr_str}""", str(correct_answer))
 
 
 def get_rules():

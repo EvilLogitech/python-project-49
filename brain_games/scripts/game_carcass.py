@@ -3,7 +3,11 @@ import prompt
 
 
 def stop_game(result, name, user_answer='', correct_answer=''):
-    print(f'Congratulations, {name}!' if result else f"""'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}!""")
+    good_result = f'Congratulations, {name}!'
+    bad_result = f"'{user_answer}' is wrong answer ;(. "
+    bad_result += f"Correct answer was '{correct_answer}'.\n"
+    bad_result += f"Let's try again, {name}!"
+    print(good_result if result else bad_result)
 
 
 def start_game(get_rules, make_a_step):

@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/EvilLogitech/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/EvilLogitech/python-project-49/actions)
+# Codeclimate
+[![Maintainability](https://api.codeclimate.com/v1/badges/cc30411e0408f2d3e04c/maintainability)](https://codeclimate.com/github/EvilLogitech/python-project-49/maintainability)
 # Asciinema record
 # game even
 https://asciinema.org/a/EKt4WdgohjKaaGXBpR0yj9tfR

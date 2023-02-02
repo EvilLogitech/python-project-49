@@ -3,12 +3,8 @@ from brain_games.scripts.game_carcass import start_game
 import brain_games.games.gcd as game
 
 
-def play_game():
-    start_game(game.get_rules, game.make_game_step)
-
-
 def main():
-    print(__name__)
+    start_game(game.get_rules, game.make_game_step)
 
 
 if __name__ == '__main__':

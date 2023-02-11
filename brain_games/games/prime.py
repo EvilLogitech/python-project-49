@@ -1,30 +1,21 @@
 #!/usr/bin/env python3
 import random
 
-
-def get_number():
-    return random.randint(1, 100)
+GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(num):
+def game_round():
+    """
+    Prime game
+    Player get a number and need to decide is it prime
+    """
     res = []
+    num = random.randint(1, 100)
     for i in range(1, num):
         if num % i == 0:
             res.append(i)
-    if res == [1, num] or res == [1]:
-        return 'yes'
-    else:
-        return 'no'
-
-
-def make_game_step():
-    num = get_number()
-    correct_answer = is_prime(num)
+    correct_answer = 'yes' if res == [1, num] or res == [1] else 'no'
     return (f'{str(num)}', str(correct_answer))
-
-
-def get_rules():
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def main():

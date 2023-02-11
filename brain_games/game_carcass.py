@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import prompt
 
+NUMBER_OF_ROUNDS = 3
+
 
 def stop_game(result, name, user_answer='', correct_answer=''):
     good_result = f'Congratulations, {name}!'
@@ -10,29 +12,20 @@ def stop_game(result, name, user_answer='', correct_answer=''):
     print(good_result if result else bad_result)
 
 
-def start_game(get_rules, make_a_step):
+def start_game(game_rules, make_a_step):
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}\n{get_rules()}')
-    count = 0
-    game_res = False
-    while count < 3:
+    print(f'Hello, {name}\n{game_rules}')
+    game_result = True
+    for _ in range(NUMBER_OF_ROUNDS):
         # Make step of game, get data
         game_step = make_a_step()
-        res = prompt.string(f'Question: {game_step[0]}\nYour answer: ')
-        if res == game_step[1]:
-            count += 1
+        answer = prompt.string(f'Question: {game_step[0]}\nYour answer: ')
+        if answer == game_step[1]:
+            print("Correct!")
         else:
-            stop_game(game_res, name, res, game_step[1])
+            game_result = False
+            stop_game(game_result, name, answer, game_step[1])
             break
-        if count == 3:
-            game_res = True
-            stop_game(game_res, name)
-            break
-
-
-def main():
-    print(__name__)
-
-
-if __name__ == '__main__':
-    main()
+    if game_result:
+        stop_game(game_result, name)

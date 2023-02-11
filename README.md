@@ -1,15 +1,25 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/EvilLogitech/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/EvilLogitech/python-project-49/actions)
-# Codeclimate
+### Codeclimate
 [![Maintainability](https://api.codeclimate.com/v1/badges/cc30411e0408f2d3e04c/maintainability)](https://codeclimate.com/github/EvilLogitech/python-project-49/maintainability)
-# Asciinema record
-# game even
-https://asciinema.org/a/EKt4WdgohjKaaGXBpR0yj9tfR
-# game calc
-https://asciinema.org/a/OIOTRSGcrBto0ymalaluW0jS3
-# game gcd
-https://asciinema.org/a/6yxQ0cFjnM6mGoc9YAyn3G5OR
-# game progression
-https://asciinema.org/a/zThE0Ldt5sw0s3HWzM6RIY08M
-# game prime
-https://asciinema.org/a/s8YyUmht9oLotHzFDdFb73Y3c
+## Brain-games
+Проект 1.
+Набор из 5 игр:
+- Калькулятор
+- Четное ли число
+- Наибольший общий делитель
+- Числовая прогрессия
+- Простое ли число?
+## Asciinema records
+### Installation
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/DDCsYWzyuBPigvYB4s46MkTjD)
+### Game even
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/kGwFzD2seRKc9St0SQc4i2zPp)
+### Game calc
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/DnNXxlTMTgjREoqInrm8uPfgR)
+### Game gcd
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/Q3tK5iu6cvvBtxgNevcPRJgId)
+### Game progression
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/jD3l8osMfrZBbVOKjWsygOjrl)
+### Game prime
+[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/7YcQN5VPg17GbsBKBoUFJAqpb)

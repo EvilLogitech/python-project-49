@@ -16,7 +16,7 @@ def game_round():
         ('+', operator.add),
         ('-', operator.sub),
         ('*', operator.mul),
-        )
+    )
     operation_name, operation_method = random.choice(operations)
     correct_answer = operation_method(num1, num2)
     return (f'{num1} {operation_name} {num2}', str(correct_answer))

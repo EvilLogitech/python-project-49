@@ -5,7 +5,7 @@ import operator
 GAME_RULES = 'What is the result of the expression?'
 
 
-def game_round():
+def get_question_and_answer():
     """
     Calculator game
     Player get two numbers and an operator
@@ -19,12 +19,4 @@ def game_round():
     )
     operation_name, operation_method = random.choice(operations)
     correct_answer = operation_method(num1, num2)
-    return (f'{num1} {operation_name} {num2}', str(correct_answer))
-
-
-def main():
-    print(__name__)
-
-
-if __name__ == '__main__':
-    main()
+    return f'{num1} {operation_name} {num2}', str(correct_answer)

@@ -14,19 +14,11 @@ def euclid_gcd(num1, num2):
     return num1 + num2
 
 
-def game_round():
+def get_question_and_answer():
     """
     GCD game
     Player get two numbers and need to find greatest common divisor
     """
     num1, num2 = random.randint(0, 100), random.randint(0, 100)
     correct_answer = str(euclid_gcd(num1, num2))
-    return (f'{str(num1)} {str(num2)}', correct_answer)
-
-
-def main():
-    print(__name__)
-
-
-if __name__ == '__main__':
-    main()
+    return f'{str(num1)} {str(num2)}', correct_answer

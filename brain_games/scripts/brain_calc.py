@@ -4,7 +4,7 @@ import brain_games.games.calc as game
 
 
 def main():
-    start_game(game.GAME_RULES, game.game_round)
+    start_game(game.GAME_RULES, game.get_question_and_answer)
 
 
 if __name__ == '__main__':
